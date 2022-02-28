@@ -1,0 +1,4 @@
+
+    writeln('Kelvin =', suhu);
+
+end.
