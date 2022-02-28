@@ -1,14 +1,16 @@
 program BesaranTurunanMassaJenis;
-// uses ctr;
+uses crt;
 
 var
-    M : real;
-    V : real;
+// Massa
+    M : integer;
+// Volume
+    V : integer;
     MassaJenis : real;
 begin
-// clrscr;
+clrscr;
 writeln('Masukan Nilai Massa');readln(M);
 writeln('Masukan Nilai Jenis');readln(V);
 MassaJenis:=M/V;
-writeln('Massa Jenis Nya Adalah : ', MassaJenis:4:0, ' kg/m');
+writeln('Massa Jenis Nya Adalah : ', MassaJenis:0:2, ' kg/m3');
 end.
