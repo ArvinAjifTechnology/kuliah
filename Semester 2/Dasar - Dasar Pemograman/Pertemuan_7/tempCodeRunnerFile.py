@@ -1,0 +1,1 @@
+potongan = harga * 0.10

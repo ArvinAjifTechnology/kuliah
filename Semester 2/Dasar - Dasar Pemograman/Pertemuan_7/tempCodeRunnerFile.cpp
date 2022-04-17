@@ -1,0 +1,1 @@
+printf("\nNama Obat : %s",namaobat);

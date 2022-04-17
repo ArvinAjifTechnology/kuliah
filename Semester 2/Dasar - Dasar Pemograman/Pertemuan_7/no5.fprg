@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Arvin M Ajif"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-17 05.27.43 PM"/>
+        <attribute name="created" value="QXJ2aW4gTSBBamlmO0RFU0tUT1AtUkpERUFJMTsyMDIyLTA0LTE3OzA0LjE5LjA4IFBNOzMzNTQ="/>
+        <attribute name="edited" value="QXJ2aW4gTSBBamlmO0RFU0tUT1AtUkpERUFJMTsyMDIyLTA0LTE3OzA1LjI3LjQzIFBNOzU7MzQ2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namaobat" type="String" array="False" size=""/>
+            <declare name="banyakkaplet" type="Integer" array="False" size=""/>
+            <declare name="harga, potongan, totalharga" type="Real" array="False" size=""/>
+            <output expression="&quot;Nama Obat: &quot;" newline="True"/>
+            <input variable="namaobat"/>
+            <output expression="&quot;Banyak Kaplet : &quot;" newline="True"/>
+            <input variable="banyakkaplet"/>
+            <assign variable="harga" expression="banyakkaplet * 25000"/>
+            <if expression="banyakkaplet &lt;= 50">
+                <then>
+                    <assign variable="potongan" expression="harga*0.05"/>
+                </then>
+                <else>
+                    <assign variable="potongan" expression="harga*0.10"/>
+                </else>
+            </if>
+            <assign variable="totalharga" expression="harga-potongan"/>
+            <output expression="&quot;Hasil Perhitungan&quot;" newline="True"/>
+            <output expression="&quot;Nama Obat :&quot;" newline="True"/>
+            <output expression="namaobat" newline="True"/>
+            <output expression="&quot;Banyak Kaplet&quot;" newline="True"/>
+            <output expression="banyakkaplet" newline="True"/>
+            <output expression="&quot;Total Harga : Rp &quot;" newline="True"/>
+            <output expression="harga" newline="True"/>
+            <output expression="&quot;Total Potongan : Rp &quot;" newline="True"/>
+            <output expression="potongan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
